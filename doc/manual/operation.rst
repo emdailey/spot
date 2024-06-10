@@ -138,8 +138,22 @@ Finding Chart
 =============
 
 The finding chart plugin is used to view a sky survey image of a requested 
-region of the sky.  
+region of the sky. This plugin is also used in conjuction with 
+``Instrument FOV`` and should be opened first.
 
+Selecting an Image source
+-------------------------
+
+
+
+Pointing
+--------
+
+
+Name Server
+-----------
+
+A target can be selected by name from 
 
 
 ==============
