@@ -8,8 +8,8 @@ Keyboard and Mouse
 
 
 =============
-SiteSelector
-============
+Site Selector
+=============
 
 The SiteSelector plugin is used to select the location from where you
 are planning to observe, as well as the time of observation at that
@@ -17,6 +17,9 @@ location.
 
 You will almost always want to start this plugin first, because it
 controls many of the aspects of the other plugins visible on the workspace.
+
+.. image:: SiteSelect.*
+
 
 Setting the observing location
 ------------------------------
@@ -62,6 +65,8 @@ Polar Sky
 
 Displays a polar sky grid on the sky window. Rings show 
 15, 30, 50, 70, and 85 degrees elevation
+
+.. image:: PolarSky.*
 
 ===========
 Target List
@@ -141,22 +146,47 @@ The finding chart plugin is used to view a sky survey image of a requested
 region of the sky. This plugin is also used in conjuction with 
 ``Instrument FOV`` and should be opened first.
 
-Selecting an Image source
--------------------------
+.. image:: FindingChart.*
 
+Display an image of a specified region
+--------------------------------------
 
+The center coordinates of the image can be set by entering the RA, DEC, and 
+Equinox under "Pointing". The RA and DEC can be 
+specified as decimal values (in which case they are interpreted as degrees) 
+or sexigesimal notation (HH:MM:SS.SSS for RA, DD:MM:SS.SS for DEC).  
+Equinoxcan be specified as e.g. J2000 or 2000.0.
 
-Pointing
---------
+The image source can be selected from a list of optical, ultraviolet, and 
+infrared sky surveys. The image will be a square with the height and width set by 
+the ``Size (arcmin)`` selection. Once the RA, DEC, and Equinox have been 
+selected, the ``Find Image`` button will search for the requested survey 
+image and will display it in the ``WS1_FIND`` window. The ``Create Blank`` 
+button will create an blank image.
 
+.. note::   Images will fail to load if the pointing position is outside
+            the surveyed regions. 
 
-Name Server
------------
+Finding a target by name
+------------------------
 
-A target can be selected by name from 
+An object can be selected by name using the ``Search name`` function under 
+"Name Server". SPOT will check either the NASA/IPAC Extragalactic Database 
+(NED) (https://ned.ipac.caltech.edu/) or the SIMBAD Astronomical Database 
+(http://simbad.cds.unistra.fr/simbad/), and if the object is found the pointing 
+information for the target will be automatically filled in. 
 
 
 ==============
 Instrument FOV
 ==============
 
+
+
+
+-------------------------
+
+
+
+Selecting an Image source
+-------------------------
