@@ -24,4 +24,5 @@ for tracking the elevation of targets over time.
    introduction
    concepts
    operation
+   secondarychannels
    subaru
