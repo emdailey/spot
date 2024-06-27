@@ -138,9 +138,11 @@ Visibility Plot
 ===============
 
 This window contains a display which shows the altitude over time of 
-selected targets in your target list. 
+selected targets in your target list.
 
 .. image:: Visibility.*
+
+.. note:: This window will be blank if there are no targets selected. 
 
 Highlighted regions
 -------------------
@@ -166,10 +168,13 @@ axis will extend from sunrise to sunset. "Current" will set the time axis
 to extend from about -2 to +7 hours, and will automatically adjust as time 
 passes.
 
+Checking moon seperation
+------------------------
 
-
-.. note:: This window will be blank if there are no targets selected. 
-    
+The visibility window can display the moon-object seperation by pressing the 
+checkbox next to "Plot moon sep" at the bottom left corner of the window. 
+Selecting this option will display the seperation in degrees at every hour 
+while the object is above the horizon.  
 
 ========
 Sky Cams
