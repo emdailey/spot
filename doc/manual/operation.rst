@@ -107,13 +107,13 @@ Image Axes Transformations
 |Flipx| Flip image in X axis:
     Flips the image horizontally along the Y axis.
 
-.. |Flipx| image:: figures/flip_X.png
+.. |Flipx| image:: figures/flip_x.png
     :scale: 16%
 
 |Flipy| Flip image in Y axis:
     Flips the image vertically along the X axis.
 
-.. |Flipy| image:: figures/flip_Y.png
+.. |Flipy| image:: figures/flip_y.png
     :scale: 16%
 
 |Swapxy| Swap X and Y axes:
