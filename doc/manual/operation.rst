@@ -1,19 +1,22 @@
-++++++++++++++++++++++++++++++++++++++
-General Operation and Primary Channels
-++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++
+General Operation and Channels
+++++++++++++++++++++++++++++++
 
 =======
 Startup
 =======
 
-To start SPOT, activate your conda environment by entering the 
-command "conda activate spot" and then activate SPOT with the 
+To start SPOT, activate your instillation environment 
+and then activate SPOT with the 
 command "spot". When the program starts it will look like this:
 
-.. image:: ProgramStart.*
+.. image:: figures/ProgramStart.*
 
 .. note:: Options for the spot command are ....
 
+If it has not been selected by default, switch to the ``CPanel``
+tab on the right side of the SPOT program. Switching to CPanel 
+opens the SPOT Control Panel.
 On the right side underneath CPanel, you can press ``New Workspace`` 
 to create a blank workspace. If you would like to give the 
 workspace a name, you will need to type a name next to the 
@@ -21,11 +24,11 @@ workspace a name, you will need to type a name next to the
 the name of the workspace once it is created. The name does not 
 have a character limit, but only the first 15 characters are saved.
 
-.. image:: NewWorkspace.*
+.. image:: figures/NewWorkspace.*
 
 When a new workspace is created two channels will appear, 
-"workspacename"_TGTS and "workspacename"_FIND. The TGTS channel 
-(what does it stand for) is used to display a map of the sky. 
+"wsname"_TGTS and "wsname"_FIND. The Targets channel
+TGTS channel is used to display a map of the sky. 
 Initially it will be blank, so in the CPanel window press 
 ``Site Selector``, ``Polar Sky``, and ``Target List``. 
 In the Site Selector window select a site from the drop down menu, 
@@ -39,10 +42,11 @@ The FIND channel is used for viewing FITS files. The window will be
 blank initially, 
 Details about these plugins can be found in the following chapters.
 
-.. image:: SampleWorkspace.*
+.. image:: figures/SampleWorkspace.*
 
 Your layout can be saved using the ``Save "workspacename" layout`` 
-button, which will save the position and size of the channels. 
+button, which will save the position and size of the channel and 
+plugin windows. 
 Whenever you make a new workspace with the same name as 
 a saved workspace, the saved layout will be loaded.
 
@@ -85,149 +89,234 @@ are either terminated by releasing the mouse button (if the operation
 employs a drag), and clicking on the image or by pressing the ``Esc`` 
 key (if not a drag operation).
 
-================
-Channel Settings
-================
+
+===============
+Tool Bar Plugin
+===============
 
 At the bottom of the SPOT window there are several icons which can be 
 used to adjust the channels. 
 
+.. image:: figures/Tools.png
+
+(Mouse wheel can frequently be used as a proxy for the mouse scroll)
 
 Image Axes Transformations
 --------------------------
 
-Flip image in X axis:
+|Flipx| Flip image in X axis:
     Flips the image horizontally along the Y axis.
 
-Flip image in Y axis:
+.. |Flipx| image:: figures/flip_X.png
+    :scale: 16%
+
+|Flipy| Flip image in Y axis:
     Flips the image vertically along the X axis.
 
-Swap X and Y axes:
+.. |Flipy| image:: figures/flip_Y.png
+    :scale: 16%
+
+|Swapxy| Swap X and Y axes:
     Flips image along the 45 degree diagonal line. 
     (+Y becomes +X and +X becomes +Y)
+
+.. |Swapxy| image:: figures/swap_xy.png
+    :scale: 16%
 
 Image Rotation controls
 -----------------------
 
-Rotate image 90 deg:
+|rot90ccw| Rotate image 90 deg:
     Rotates the image 90 degrees counter-clockwise.
 
-Rotate image -90 deg:
+.. |rot90ccw| image:: figures/rot90ccw.png
+    :scale: 16%
+
+|rot90cw| Rotate image -90 deg:
     Rotates the image 90 degrees clockwise.
+
+.. |rot90cw| image:: figures/rot90cw.png
+    :scale: 16%
     
-Orient image N=Up E=Right:
+|orientnw| Orient image N=Up E=Right:
     Orients the image so North is up and East is to the right. Activating 
     this setting also activates ``Flip image in X axis``.
-    
-Orient image N=Up E=Left:
+
+.. |orientnw| image:: figures/orient_nw.png
+    :scale: 16%
+
+|orientne| Orient image N=Up E=Left:
     Orients the image so North is up and East is to the left.
+
+.. |orientne| image:: figures/orient_ne.png
+    :scale: 16%
 
 Image Navigation
 ----------------
 
-Go to previous image in channel:
+|up| Go to previous image in channel:
     If you have opened more than 1 image in the FIND channel, pressing this
     button will go to the previous image. Otherwise, this option will be 
     greyed out.
-    
-Go to next image in channel:
+
+.. |up| image:: figures/up.png
+    :scale: 16%
+
+|down| Go to next image in channel:
     If you have opened more than 1 image in the FIND channel, pressing this
     button will go to the next image (images are in a loop). Otherwise, this 
     option will be greyed out.
 
+.. |down| image:: figures/down.png
+    :scale: 16%
+
 Zoom controls
 -------------
 
-Zoom in:
+|zoomin| Zoom in:
     Zooms in on the selected channel
-    
-Zoom out:
+
+.. |zoomin| image:: figures/zoom_in.png
+    :scale: 16%
+
+|zoomout| Zoom out:
     Zooms out on the selected channel
-    
-Zoom to fit window size:
+
+.. |zoomout| image:: figures/zoom_out.png
+    :scale: 16%
+
+|zoomfit| Zoom to fit window size:
     Zooms the image so that either the X or Y axis matches the size of the 
     channel.
-    
-Zoom to 100% (1:1):
+
+.. |zoomfit| image:: figures/zoom_fit.png
+    :scale: 16%
+
+|zoom100| Zoom to 100% (1:1):
     Zooms the image so the image pixel size matchs your computer's pixel size.
-    
+
+.. |zoom100| image:: figures/zoom_100.png
+    :scale: 16%
+
 Mouse-Controlled Function Modes
 -------------------------------
 
-Pan with left, zoom with right:
+|pan| Pan with left, zoom with right:
     While this mode is selected, left-drag with the mouse will pan over the 
     image. Right-drag will zoom in if the mouse is moved to the right, and 
     will zoom out if moving to the left. 
+
+.. |pan| image:: figures/pan.png
+    :scale: 16%
     
-Left/right click zooms in/out; hold middle to pan freely over image:
+|cross| Left/right click zooms in/out; hold middle to pan freely over image:
     Left-click will zoom in on the mouse's location and right-click will 
     zoom out from the mouse's location. Scroll-drag will pan over the image, 
     where the pan destination is relative to the mouse position on the channel.
-    
-Drag left to rotate; click right to reset to 0 degrees:
+
+.. |cross| image:: figures/crosshair.png
+    :scale: 16%
+
+|rotate| Drag left to rotate; click right to reset to 0 degrees:
     While enabled, left-drag will rotate the image around the center 
     point from the clicked location. Right-click will reset the rotation to zero.
-    
-Scroll to set color distribution algorithm:
+
+.. |rotate| image:: figures/rotate.png
+    :scale: 16%
+
+|sqrt| Scroll to set color distribution algorithm:
     While this mode is enabled, scrolling will browse through the available color 
     distribution algorithms. The options are "linear", "log", "power", "sqrt", 
     "squared", "asinh", "sinh", and "histeq". Default is "linear".
-    
-Scroll to set color map:
+
+.. |sqrt| image:: figures/sqrt.png
+    :scale: 16%
+
+|palette| Scroll to set color map:
     While this mode is enabled, scrolling will browse through the available color 
     maps. The list is extensive and will not be listed here, but can be found in 
     the preferences window, see ``Set channel preferences`` below.
-    
-Left/right sets high cut, up down sets lo cut:
+
+.. |palette| image:: figures/palette.png
+    :scale: 16%
+
+|cuts| Left/right sets high cut, up down sets lo cut:
     This mode lets you adjust the high and low cuts using your mouse. Left-drag 
     will adjust the cut levels and right-click will reset the cut levels. Dragging 
     the mouse left and right will adjust the high cut, with moving to the right 
     increasing the cut level. Dragging the mouse up and down will adjust the 
     low cut, with moving upwards increasing the cut level.
-    
-Contrast/bias with left/right/up/down:
+
+.. |cuts| image:: figures/cuts.png
+    :scale: 16%
+
+|contrast| Contrast/bias with left/right/up/down:
     This mode allows you to adjust the contrast and brightness. Left-drag will 
     adjust the contrast and brightness, right-click will reset both to the default. 
     Dragging the mouse left and right will adjust the brightness, with moving the 
     mouse to the left increasing the brightness. Dragging the mouse up and down 
     will adjust the contrast, with dragging the mouse down increasing the 
     contrast. 
-    
-Modes are oneshot or locked:
+
+.. |contrast| image:: figures/contrast.png
+    :scale: 16%
+
+|lock| Modes are oneshot or locked:
     Allows you to choose if the modes are single use or enabled until disabled by 
     the user. When this option is not highlighted, it is in the "oneshot" mode, 
     where after using a mode once it disables itself immediately after one use. 
     While this option is highlighted, each of the modes is active until disabled 
     by the user. Defaults to "locked" when starting SPOT.
 
+.. |lock| image:: figures/lock.png
+    :scale: 16%
+
 Image Reset Functions
 ---------------------
 
-Center image:
+|centerim| Center image:
     Centers the image on the channel.
-    
-Reset all transformations and rotations:
+
+.. |centerim| image:: figures/center_image.png
+    :scale: 16%
+
+|resetRot| Reset all transformations and rotations:
     Resets all transformations and rotations. 
-    
-Auto cut levels:
+
+.. |resetRot| image:: figures/reset_rotation.png
+    :scale: 16%
+ 
+|autocut| Auto cut levels:
     Automatically sets the high and low cut levels. (How is it set)
-    
-Reset contrast:
+
+.. |autocut| image:: figures/auto_cuts.png
+    :scale: 16%
+ 
+|resetCon| Reset contrast:
     Resets the image contrast and brightness to the defaults.
+
+.. |resetCon| image:: figures/reset_contrast.png
+    :scale: 16%
 
 Side Panel Functions
 --------------------
 
-Set channel preferences (in focused channel):
+|setting| Set channel preferences (in focused channel):
     Opens the preferences window for the selected channels. All of the channel 
     settings can be adjusted from this window with more control than if they 
     were accessed using the icons at the bottom bar. 
-    
-View image metadata (Header plugin):
+
+.. |setting| image:: figures/settings.png
+    :scale: 16%
+  
+|tag| View image metadata (Header plugin):
     Displays the image header under the dialogs tab on the right side 
     of SPOT.
-    
-Magnify detail (Zoom plugin):
+
+.. |tag| image:: figures/tags.png
+    :scale: 16%
+ 
+|microscope| Magnify detail (Zoom plugin):
     Selecting this button creates a ``Zoom`` channel in the dialogs tab 
     on the right side of SPOT. In the window it shows a zoomed in view 
     of where the cursor is on the TGTS or FIND channels. The zoom amount 
@@ -236,27 +325,53 @@ Magnify detail (Zoom plugin):
     zoom level in either the TGTS or FIND window depending on which one 
     you are moving the cursor over. 
 
+.. |microscope| image:: figures/microscope.png
+    :scale: 16%
+
     
 ============
 TGTS Channel
 ============
 
-The TGTS Channel is the main window for tracking the sky position of selected 
-targets. The ``Site Selector``, ``Polar Sky``, ``Target List``, 
-``Visibility Plot``, ``Sky Cams``, ``Telescope Position``, and 
-``Target Generator`` plugins are all dependent on the TGTS channel.
+.. image:: figures/TGTSchannel.png
+.. image goes here, take image during night shift
+
+The Targets (TGTS) Channel is the main window for tracking the sky position of selected 
+targets. The following plugins are all dependent on the Targets channel.
+
+.. toctree::
+   :maxdepth: 1
+
+   siteselect
+   polarsky
+   targetlist
+   visplot
+   skycams
+   telescopepos
+   telgen
 
 ============
 FIND Channel
 ============
 
+.. image:: figures/findchannel.png
+
 The FIND channel is used to plan individual or sets of observations. The 
-``Finding Chart``, ``Instrument FOV``, and ``HSC Planner`` plugins are all 
+following plugins are all 
 dependent on the FIND channel.
+
+.. toctree::
+   :maxdepth: 1
+
+   findchart
+   intfov
 
 Loading a FITS image file
 -------------------------
 
-Operation - Utils - Fbrowser
-
-Drag and drop does not seem to work
+The FIND window can be used to display local FITS files. 
+First, open the ``Operation`` menu and select ``Utils`` and then select 
+``FBrowser``. Search for the FITS file, and then either left-drag and 
+drop into the FIND channel or highlight the file and press "load".
+Alternatively, you may use file explorer to find your FITS file and then 
+left-drag the file from the file explorer to the FIND window.

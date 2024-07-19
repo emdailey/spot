@@ -72,14 +72,15 @@ colorbar samples.
 It is customizable using ``~\.ginga\plugin_ColorMapPicker.cfg``, where ``~``
 is your HOME directory:
 
-.. code-block:: Python
+.. code-block:: python
+   :linenos:
+   
+   #
+   # ColorMapPicker plugin preferences file
+   #
+   # Place this in file under ~/.ginga with the name "plugin_ColorMapPicker.cfg"
 
-#
-# ColorMapPicker plugin preferences file
-#
-# Place this in file under ~/.ginga with the name "plugin_ColorMapPicker.cfg"
-
-cbar_ht = 20
-cbar_wd = 300
-cbar_sep = 10
-cbar_pan_accel = 1.0
+   cbar_ht = 20
+   cbar_wd = 300
+   cbar_sep = 10
+   cbar_pan_accel = 1.0

@@ -71,27 +71,28 @@ by the plugin configuration file setting ``scroll_pct``.  The default is 10%.
 It is customizable using ``~\.ginga\plugin_Histogram.cfg``, where ``~``
 is your HOME directory:
 
-.. code-block:: Python
-        
-#
-# Histogram plugin preferences file
-#
-# Place this in file under ~/.ginga with the name "plugin_Histogram.cfg"
+.. code-block:: python
+   :linenos:   
 
-# Switch to "move" mode after selection
-draw_then_move = True
+   #
+   # Histogram plugin preferences file
+   #
+   # Place this in file under ~/.ginga with the name "plugin_Histogram.cfg"
 
-# Number of bins for histogram
-num_bins = 2048
+   # Switch to "move" mode after selection
+   draw_then_move = True
 
-# Histogram color
-hist_color = 'aquamarine'
+   # Number of bins for histogram
+   num_bins = 2048
 
-# Calculate extra statistics on box
-show_stats = True
+   # Histogram color
+   hist_color = 'aquamarine'
 
-# Controls formatting (width) of statistics numbers
-maxdigits = 7
+   # Calculate extra statistics on box
+   show_stats = True
 
-# percentage to adjust cuts gap when scrolling in histogram
-scroll_pct = 0.10
+   # Controls formatting (width) of statistics numbers
+   maxdigits = 7
+
+   # percentage to adjust cuts gap when scrolling in histogram
+   scroll_pct = 0.10

@@ -39,40 +39,41 @@ directory if closed and then restarted.
 It is customizable using ``~\.ginga\plugin_FBrowser.cfg``, where ``~``
 is your HOME directory:
 
-.. code-block:: Python
+.. code-block:: python
+   :linenos:
 
-#
-# FBrowser plugin preferences file
-#
-# Place this in file under ~/.ginga with the name "plugin_FBrowser.cfg"
+   #
+   # FBrowser plugin preferences file
+   #
+   # Place this in file under ~/.ginga with the name "plugin_FBrowser.cfg"
 
-# Set to a specific directory to choose a starting point for file exploration.
-# If None is given, it defaults to your HOME.
-home_path = None
+   # Set to a specific directory to choose a starting point for file exploration.
+   # If None is given, it defaults to your HOME.
+   home_path = None
 
-# This controls whether the plugin scans the FITS headers to create the
-# listing (slow for large numbers of files)
-scan_fits_headers = False
+   # This controls whether the plugin scans the FITS headers to create the
+   # listing (slow for large numbers of files)
+   scan_fits_headers = False
 
-# If the number of files in the listing is greater than this, don't do
-# a scan on the headers
-scan_limit = 100
+   # If the number of files in the listing is greater than this, don't do
+   # a scan on the headers
+   scan_limit = 100
 
-# if scan_fits_headers is True, then the keywords provides a map between
-# attributes and FITS header keywords to fetch from the header
-keywords = [('Object', 'OBJECT'), ('Date', 'DATE-OBS'), ('Time UT', 'UT')]
+   # if scan_fits_headers is True, then the keywords provides a map between
+   # attributes and FITS header keywords to fetch from the header
+   keywords = [('Object', 'OBJECT'), ('Date', 'DATE-OBS'), ('Time UT', 'UT')]
 
-# columns lists the column headers and attributes to show in the listing.
-# If you want to include FITS keywords, be sure to include the attributes
-# defined in the keywords preference (i.e., 'Time UT', 'Object')
-columns = [('Type', 'icon'), ('Name', 'name'), ('Size', 'st_size_str'), ('Mode', 'st_mode_oct'), ('Last Changed', 'st_mtime_str')]
+   # columns lists the column headers and attributes to show in the listing.
+   # If you want to include FITS keywords, be sure to include the attributes
+   # defined in the keywords preference (i.e., 'Time UT', 'Object')
+   columns = [('Type', 'icon'), ('Name', 'name'), ('Size', 'st_size_str'), ('Mode', 'st_mode_oct'), ('Last Changed', 'st_mtime_str')]
 
-# If True, color every other row in alternating shades to improve
-# readability of long tables
-color_alternate_rows = True
+   # If True, color every other row in alternating shades to improve
+   # readability of long tables
+   color_alternate_rows = True
 
-# Maximum number of rows that will turn off auto column resizing (for speed)
-max_rows_for_col_resize = 5000
+   # Maximum number of rows that will turn off auto column resizing (for speed)
+   max_rows_for_col_resize = 5000
 
 ======
 Header
@@ -102,25 +103,26 @@ was created with an option not to save the primary header.
 It is customizable using ``~\.ginga\plugin_Header.cfg``, where ``~``
 is your HOME directory:
 
-.. code-block:: Python
+.. code-block:: python
+   :linenos:
 
-#
-# Header plugin preferences file
-#
-# Place this in file under ~/.ginga with the name "plugin_Header.cfg"
+   #
+   # Header plugin preferences file
+   #
+   # Place this in file under ~/.ginga with the name "plugin_Header.cfg"
 
-# Sort header
-sortable = True
+   # Sort header
+   sortable = True
 
-# Include primary header in table output
-include_primary_header = False
+   # Include primary header in table output
+   include_primary_header = False
 
-# If True, color every other row in alternating shades to improve
-# readability of long tables
-color_alternate_rows = True
+   # If True, color every other row in alternating shades to improve
+   # readability of long tables
+   color_alternate_rows = True
 
-# Maximum number of rows that will turn off auto column resizing (for speed)
-max_rows_for_col_resize = 5000
+   # Maximum number of rows that will turn off auto column resizing (for speed)
+   max_rows_for_col_resize = 5000
 
 ===========
 Preferences    
@@ -673,17 +675,18 @@ The "Defaults" button restores the default settings of the controls.
 It is customizable using ``~\.ginga\plugin_Zoom.cfg``, where ``~``
 is your HOME directory:
 
-.. code-block:: Python
+.. code-block:: python
+   :linenos:
 
-#
-# Zoom plugin preferences file
-#
-# Place this in file under ~/.ginga with the name "plugin_Zoom.cfg"
+   #
+   # Zoom plugin preferences file
+   #
+   # Place this in file under ~/.ginga with the name "plugin_Zoom.cfg"
 
-# default zoom level
-zoom_amount = 3
+   # default zoom level
+   zoom_amount = 3
 
-# refresh interval (sec)
-# NOTE: usually a small delay speeds things up
-refresh_interval = 0.02
+   # refresh interval (sec)
+   # NOTE: usually a small delay speeds things up
+   refresh_interval = 0.02
 

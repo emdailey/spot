@@ -10,7 +10,7 @@ Spot is a graphical tool created for planning and conducting
 astronomical observations at a site.  It can display the telescope 
 targets and telescope position on a polar sky plot, and plot the 
 visibilty of targets. The tool can be setup to look up catalog 
-images and overlay instrument fields of view on top. 
+images and overlay instrument fields of view. 
 
 Spot is written and maintained by software engineers at the
 Subaru Telescope, National Astronomical Observatory of Japan, and the

@@ -25,4 +25,4 @@ for tracking the elevation of targets over time.
    concepts
    operation
    secondarychannels
-   subaru
+   channelselection
