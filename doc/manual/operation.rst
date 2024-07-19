@@ -51,6 +51,57 @@ Whenever you make a new workspace with the same name as
 a saved workspace, the saved layout will be loaded.
 
 
+
+    
+============
+TGTS Channel
+============
+
+.. image:: figures/TGTSchannel.png
+.. image goes here, take image during night shift
+
+The Targets (TGTS) Channel is the main window for tracking the sky position of selected 
+targets. The following plugins are all dependent on the Targets channel.
+
+.. toctree::
+   :maxdepth: 1
+
+   siteselect
+   polarsky
+   targetlist
+   visplot
+   skycams
+   telescopepos
+   telgen
+
+============
+FIND Channel
+============
+
+.. image:: figures/findchannel.png
+
+The FIND channel is used to plan individual or sets of observations. The 
+following plugins are all 
+dependent on the FIND channel.
+
+.. toctree::
+   :maxdepth: 1
+
+   findchart
+   intfov
+
+Loading a FITS image file
+-------------------------
+
+The FIND window can be used to display local FITS files. 
+First, open the ``Operation`` menu and select ``Utils`` and then select 
+``FBrowser``. Search for the FITS file, and then either left-drag and 
+drop into the FIND channel or highlight the file and press "load".
+Alternatively, you may use file explorer to find your FITS file and then 
+left-drag the file from the file explorer to the FIND window.
+
+
+
 ==================
 Keyboard and Mouse
 ==================
@@ -327,51 +378,3 @@ Side Panel Functions
 
 .. |microscope| image:: figures/microscope.png
     :scale: 16%
-
-    
-============
-TGTS Channel
-============
-
-.. image:: figures/TGTSchannel.png
-.. image goes here, take image during night shift
-
-The Targets (TGTS) Channel is the main window for tracking the sky position of selected 
-targets. The following plugins are all dependent on the Targets channel.
-
-.. toctree::
-   :maxdepth: 1
-
-   siteselect
-   polarsky
-   targetlist
-   visplot
-   skycams
-   telescopepos
-   telgen
-
-============
-FIND Channel
-============
-
-.. image:: figures/findchannel.png
-
-The FIND channel is used to plan individual or sets of observations. The 
-following plugins are all 
-dependent on the FIND channel.
-
-.. toctree::
-   :maxdepth: 1
-
-   findchart
-   intfov
-
-Loading a FITS image file
--------------------------
-
-The FIND window can be used to display local FITS files. 
-First, open the ``Operation`` menu and select ``Utils`` and then select 
-``FBrowser``. Search for the FITS file, and then either left-drag and 
-drop into the FIND channel or highlight the file and press "load".
-Alternatively, you may use file explorer to find your FITS file and then 
-left-drag the file from the file explorer to the FIND window.
