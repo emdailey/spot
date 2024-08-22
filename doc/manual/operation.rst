@@ -20,9 +20,7 @@ opens the SPOT Control Panel.
 On the right side underneath CPanel, you can press ``New Workspace`` 
 to create a blank workspace. If you would like to give the 
 workspace a name, you will need to type a name next to the 
-``New Workspace`` button in the fillable area. You cannot change 
-the name of the workspace once it is created. The name does not 
-have a character limit, but only the first 15 characters are saved.
+``New Workspace`` button in the fillable area. 
 
 .. image:: figures/NewWorkspace.*
 
@@ -42,7 +40,7 @@ The FIND channel is used for viewing FITS files. The window will be
 blank initially, 
 Details about these plugins can be found in the following chapters.
 
-.. image:: figures/SampleWorkspace.*
+.. image:: figures/SampleWorkspace2.*
 
 Your layout can be saved using the ``Save "workspacename" layout`` 
 button, which will save the position and size of the channel and 
@@ -57,7 +55,7 @@ a saved workspace, the saved layout will be loaded.
 TGTS Channel
 ============
 
-.. image:: figures/TGTSchannel.png
+.. image:: figures/TGTSchannel2.png
 .. image goes here, take image during night shift
 
 The Targets (TGTS) Channel is the main window for tracking the sky position of selected 
@@ -101,6 +99,42 @@ Alternatively, you may use file explorer to find your FITS file and then
 left-drag the file from the file explorer to the FIND window.
 
 
+=============
+Control Panel
+=============
+
+The Control Panel (CPanel) is used to access and display the status of 
+plugins, and also create, switch, and save workspaces. 
+
+.. image:: figures/CPanel.*
+
+A new workspace can be created by typing a name in the fillable box next 
+to "New Workspace" and then pressing "New Workspace". If there is a 
+saved layout under the same (case-sensitive) name, the saved layout will 
+be loaded. The name does not have a character limit, but only the first 
+15 characters are saved and the name of the workspace cannot be changed 
+once it is created. You can swap to another open workspace by opening the 
+drop down menu next to "Select Workspace" and pressing one of the options. 
+Pressing the ``Save workspace_name layout`` button will save the current 
+size and position of the plugin and channel windows. 
+
+Installed plugins are shown in a list, and each can be activated and 
+deactivated by pressing the checkbox next to the plugin name. Information 
+about each plugin can be found in the links below.
+
+.. toctree::
+   :maxdepth: 1
+
+   siteselect
+   polarsky
+   targetlist
+   visplot
+   skycams
+   telescopepos
+   telgen
+   findchart
+   intfov
+
 
 ==================
 Keyboard and Mouse
@@ -133,7 +167,7 @@ and *Ctrl*.
 with the left mouse button. *Shift-right-click* is the same using the 
 right mouse button, etc. 
 
-Some mouse-controlled operations in Ginga are inititiated by a 
+Some mouse-controlled operations in SPOT are inititiated by a 
 key stroke. In these case the key is pressed and released (not held), 
 and then the mouse is used to control the operation. Such operations 
 are either terminated by releasing the mouse button (if the operation 

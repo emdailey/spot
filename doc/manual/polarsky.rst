@@ -27,9 +27,4 @@ time.
 TGTS Sky Plot
 =============
 
-Colorblind mode for red/green colorblind?
-
-Rings show 
-15, 30, 50, 70, and 85 degrees elevation
-
-.. image:: figures/PolarSky.*
+.. image:: figures/PolarSky2.*

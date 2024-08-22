@@ -22,7 +22,6 @@ for tracking the elevation of targets over time.
    :maxdepth: 3
 
    introduction
-   concepts
    operation
-   secondarychannels
    channelselection
+   subaru
