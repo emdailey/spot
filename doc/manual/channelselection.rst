@@ -22,7 +22,7 @@ CPanel Plugin Selection
 =======================
 
 Right of the Operation menu is a set of green and grey icons which 
-control and show the focus status of the existing channels.
+control and show the focus status of the plugin channels.
 
 .. image:: figures/Selectrow2.png
 
@@ -40,6 +40,8 @@ the focus to the selected plugin if it is not in focus already.
 "Unfocus" will unfocus the selected plugin if it was in focus. 
 Selecting "Stop" will close the selected plugin, and selecting "Reload" 
 will close the selected window and open it again. 
+
+.. _operation:
 
 ==============
 Operation Menu

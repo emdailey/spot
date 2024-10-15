@@ -2,11 +2,14 @@
 Target List
 +++++++++++
 
-``Target List``, or ``Targets``, is normally used in conjunction with the 
-plugins ``PolarSky`` and ``Visibility`` to show information about celestial 
+Target List, or Targets (Not to be confused with the Targets channel), is 
+normally used in conjunction with the 
+plugins :doc:`polarsky` and :doc:`visplot` to show information about celestial 
 objects that could be observed.  It allows you to load one or more files 
 of targets and then plot them on the "<wsname>_TGTS" window, or show their 
 visibility in the ``Visibility`` plugin UI.
+
+.. image:: figures/targetlist.*
 
 ===============================
 Loading targets from a CSV file
