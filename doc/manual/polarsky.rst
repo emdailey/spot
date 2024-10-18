@@ -20,8 +20,5 @@ PolarSky Window
 
 The PolarSky channel contains time information for the site, the sun, and 
 the moon. Under "Site Date/Time", it has the date in yyyy-mm-dd, local time 
-and time zone, UTC time and date in mm/dd, and LST.
-
-The Sun section displays the Sunset and Sunrise along with the Night center 
-time. 
+and time zone, UTC time and date in mm/dd, and LST. 
 

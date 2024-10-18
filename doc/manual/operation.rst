@@ -6,13 +6,13 @@ General Operation and Channels
 Startup
 =======
 
-To start SPOT, activate your instillation environment 
+To start SPOT, activate your installation environment 
 and then activate SPOT with the 
 command "spot". When the program starts it will look like this:
 
 .. image:: figures/ProgramStart.*
 
-.. note:: Options for the spot command are ....
+.. .. note:: Options for the spot command are ....
 
 If it has not been selected by default, switch to the ``CPanel``
 tab on the right side of the SPOT program. Switching to CPanel 
@@ -20,25 +20,24 @@ opens the SPOT Control Panel.
 On the right side underneath CPanel, you can press ``New Workspace`` 
 to create a blank workspace. If you would like to give the 
 workspace a name, you will need to type a name next to the 
-``New Workspace`` button in the fillable area. 
+``New Workspace`` button in the fillable area. Otherwise, 
+the name will default to "WS1".
 
 .. image:: figures/NewWorkspace.*
 
 When a new workspace is created two channels will appear, 
-"wsname"_TGTS and "wsname"_FIND. The Targets channel
-TGTS channel is used to display a map of the sky. 
+"wsname"_TGTS and "wsname"_FIND. The TGTS channel (Targets Channel) 
+is used to display a map of the sky. 
 Initially it will be blank, so in the CPanel window press 
 :doc:`siteselect`, :doc:`polarsky`, and :doc:`targetlist`. 
 In the Site Selector window select a site from the drop down menu, 
 then go to the Targets window and press "File" to browse for a file 
 with your target list. Once you have selected your target file, 
-you will see your targets appear on the TGTS channel. If they do not 
-appear, try pressing the ``List All Targets`` switch on the 
-Targets window. 
+you will see your targets appear on the TGTS channel. 
 
 The FIND channel is used for viewing FITS files. The window will be 
-blank initially, 
-Details about these plugins can be found in the following chapters.
+blank initially, details about the plugins can be found in the 
+following chapters.
 
 .. image:: figures/SampleWorkspace2.*
 
@@ -52,7 +51,7 @@ Whenever you make a new workspace with the same name as
 a saved workspace, the saved layout will be loaded.
 
 
-
+.. _TargetsChannel:
     
 ============
 TGTS Channel
@@ -61,7 +60,7 @@ TGTS Channel
 .. image:: figures/TGTSchannel2.png
 
 The Targets (TGTS) Channel is the main window for tracking the sky position of selected 
-targets. The following plugins are all dependent on the Targets channel.
+targets. The following plugins are primarily used with the Targets channel.
 
 .. toctree::
    :maxdepth: 1
@@ -74,6 +73,8 @@ targets. The following plugins are all dependent on the Targets channel.
    telescopepos
    telgen
 
+.. _FindChannel:
+
 ============
 FIND Channel
 ============
@@ -84,8 +85,7 @@ Image contains data from the WISE 3.4 :math:`\mu`\ m survey.
 (`Wright et al (2010)`_, `Mainzer et al (2011)`_)
 
 The FIND channel is used to plan individual or sets of observations. The 
-following plugins are all 
-dependent on the FIND channel.
+following plugins are primarily used with the FIND channel.
 
 .. toctree::
    :maxdepth: 1
@@ -145,9 +145,6 @@ about each plugin can be found in the links below.
 Keyboard and Mouse
 ==================
 
-..
-    Duplicated from Ginga manual with minor changes.
-
 This portion of the manual has been duplicated from the "Keyboard and 
 mouse operations" section of the `Ginga Manual`_ with minor changes. 
 
@@ -193,6 +190,25 @@ used to adjust the channels.
 .. image:: figures/Tools.png
 
 (Mouse wheel can frequently be used as a proxy for the mouse scroll)
+
+Image Navigation
+----------------
+
+|up| Go to previous image in channel:
+    If you have opened more than 1 image in the FIND channel, pressing this
+    button will go to the previous image. Otherwise, this option will be 
+    greyed out.
+
+.. |up| image:: figures/up.png
+    :scale: 16%
+
+|down| Go to next image in channel:
+    If you have opened more than 1 image in the FIND channel, pressing this
+    button will go to the next image (images are in a loop). Otherwise, this 
+    option will be greyed out.
+
+.. |down| image:: figures/down.png
+    :scale: 16%
 
 Image Axes Transformations
 --------------------------
@@ -242,25 +258,6 @@ Image Rotation controls
     Orients the image so North is up and East is to the left.
 
 .. |orientne| image:: figures/orient_ne.png
-    :scale: 16%
-
-Image Navigation
-----------------
-
-|up| Go to previous image in channel:
-    If you have opened more than 1 image in the FIND channel, pressing this
-    button will go to the previous image. Otherwise, this option will be 
-    greyed out.
-
-.. |up| image:: figures/up.png
-    :scale: 16%
-
-|down| Go to next image in channel:
-    If you have opened more than 1 image in the FIND channel, pressing this
-    button will go to the next image (images are in a loop). Otherwise, this 
-    option will be greyed out.
-
-.. |down| image:: figures/down.png
     :scale: 16%
 
 Zoom controls
