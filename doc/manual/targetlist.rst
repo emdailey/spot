@@ -6,10 +6,10 @@ Target List, or Targets (Not to be confused with the Targets channel), is
 normally used in conjunction with the 
 plugins :doc:`polarsky` and :doc:`visplot` to show information about celestial 
 objects that could be observed.  It allows you to load one or more files 
-of targets and then plot them on the "<wsname>_TGTS" window, or show their 
+of targets and then plot them on the :ref:`TargetsChannel`, or show their 
 visibility in the :doc:`visplot` plugin UI.
 
-.. image:: figures/targetlist.*
+.. image:: figures/targetlist2.*
 
 ===============================
 Loading targets from a CSV file
@@ -22,13 +22,8 @@ be ignored.  In this format, RA and DEC can be specified as decimal values
 (HH:MM:SS.SSS for RA, DD:MM:SS.SS for DEC).  Equinox can be specified
 as e.g. J2000 or 2000.0.
 
-.. important:: The equinox column is in here for future support. Currently,
-               target coordinates in SPOT are assumed to be in ICRS.
-               We hope to eventually be able to support older reference
-               systems such as FK4, but for now please just realize that
-               the coordinates will be assumed to be in ICRS. For J2000
-               coordinates this will generally be good enough for most
-               planning purposes.
+.. note:: SPOT can also read targets from CSV files in "SOSS notation".
+          See the section below on loading targets from an OPE file.
 
 Press the "File" button and navigate to, and select, a CSV file with the
 above format.  Or, type the path of the file in the box next to the "File"
@@ -81,7 +76,7 @@ a target and pressing "Delete" will remove the target from the list. If
 the target was added from a file, reloading the file by pressing "Set" 
 will restore all of the deleted targets.
 
-Checking the box next to "Plot SS" will plot the Sun, the Planets, and 
+Checking the box next to "Plot Solar Sys" will plot the Sun, the Planets, and 
 Pluto on the :ref:`TargetsChannel`.
 
 The drop down menu next to "Plot:" changes which targets are plotted on 
@@ -89,3 +84,6 @@ the :ref:`TargetsChannel`. Selecting "All" will show all of the targets,
 selecting "Tagged+Selected" will show all of the targets which have been 
 tagged or are selected, and selecting "Selected" will show only the 
 target which is selected.
+
+The "Settings" button has the options "Merge Targets" and 
+"List unreferenced targets". 

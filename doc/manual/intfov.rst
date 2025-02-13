@@ -10,6 +10,9 @@ instrument over a survey image in the :ref:`FindChannel`.
 Image contains data from the WISE 3.4 :math:`\mu`\ m survey. 
 (`Wright et al (2010)`_, `Mainzer et al (2011)`_)
 
+.. note:: It is important to have previously downloaded an image in
+          the find viewer (using the "FindImage" plugin) that has an
+          accurate WCS in order for this plugin to operate properly.
 
 ========================
 Selecting the Instrument
@@ -33,11 +36,10 @@ next to "Follow telescope" in the :doc:`findchart` window.  This can allow
 you to watch a dither happening on an area of the sky if the world
 coordinate system is reasonably accurate in the finding image.
 
-===================
-Custom Instruments 
-===================
-
-To be continued.
+.. note:: To get the "Follow telescope" feature to work, you need to
+          have written a companion plugin to get the status from your
+          telescope as described in the documentation for the
+          TelescopePosition plugin.
 
 
 .. _Wright et al (2010): https://ui.adsabs.harvard.edu/abs/2010AJ....140.1868W/abstract

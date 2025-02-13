@@ -30,6 +30,8 @@ The "Rotate view to azimuth" button will orient the Targets
 window so the telescope azimuth is always facing towards the 
 top of the screen.
 
+The "Target follows telescope" button will ...
+
 ==========================
 Writing a Companion Plugin
 ==========================

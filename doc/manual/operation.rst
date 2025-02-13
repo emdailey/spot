@@ -64,18 +64,7 @@ TGTS Channel
 .. image:: figures/TGTSchannel.png
 
 The Targets (TGTS) Channel is the main window for tracking the sky position of selected 
-targets. The following plugins are primarily used with the Targets channel.
-
-.. toctree::
-   :maxdepth: 1
-
-   siteselect
-   polarsky
-   targetlist
-   visplot
-   skycams
-   telescopepos
-   telgen
+targets. 
 
 .. _FindChannel:
 
@@ -88,14 +77,9 @@ FIND Channel
 Image contains data from the WISE 3.4 :math:`\mu`\ m survey. 
 (`Wright et al (2010)`_, `Mainzer et al (2011)`_)
 
-The FIND channel is used to plan individual or sets of observations. The 
-following plugins are primarily used with the FIND channel.
+The FIND channel is used to display FITS images and to plan individual or sets of 
+observations. 
 
-.. toctree::
-   :maxdepth: 1
-
-   findchart
-   intfov
 
 Loading a FITS image file
 -------------------------

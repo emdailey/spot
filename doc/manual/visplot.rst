@@ -5,7 +5,7 @@ Visibility Plot
 This window contains a display which shows the altitude over time of 
 selected targets in your target list.
 
-.. image:: figures/Visibility.*
+.. image:: figures/Visibility2.*
 
 .. note:: This window will be blank if there are no targets selected.
 
@@ -44,6 +44,17 @@ checkbox next to "Plot moon sep" at the bottom left corner of the window.
 Selecting this option will display the separation in degrees at every hour 
 while the object is above the horizon.  
 
+=====================
+Plotting target paths
+=====================
+
+The paths the targets will take across the sky can be plotted on the Targets 
+channel by pressing the checkbox next to "Plot polar AzEl". When selected, the 
+path of the target across the sky within the time range of the visibility plot 
+will be shown.
+
+.. image:: figures/Visibility2_2.*
+
 ============
 Plot Options
 ============
@@ -53,3 +64,6 @@ visibility plot. Selecting "All" will show all of the targets,
 selecting "Tagged+Selected" will show all of the targets which have been 
 tagged or are selected, and selecting "Selected" will show only the 
 target which is selected.
+
+Selected targets will be shown in blue, any tagged targets will be shown in 
+magenta, and all other targets will be shown in green.

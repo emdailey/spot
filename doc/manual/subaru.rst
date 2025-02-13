@@ -9,4 +9,4 @@ Subaru.
    :maxdepth: 1
 
    hsc
-
+   lgs
