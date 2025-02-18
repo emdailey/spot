@@ -5,7 +5,7 @@ Visibility Plot
 This window contains a display which shows the altitude over time of 
 selected targets in your target list.
 
-.. image:: figures/Visibility2.*
+.. image:: figures/Visibility.*
 
 .. note:: This window will be blank if there are no targets selected.
 
@@ -53,7 +53,7 @@ channel by pressing the checkbox next to "Plot polar AzEl". When selected, the
 path of the target across the sky within the time range of the visibility plot 
 will be shown.
 
-.. image:: figures/Visibility2_2.*
+.. image:: figures/Visibility2.*
 
 ============
 Plot Options

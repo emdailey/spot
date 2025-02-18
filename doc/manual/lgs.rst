@@ -40,3 +40,13 @@ Displays the current laser shooting window and
 Time left: 
 Displays the time until the next opening or closing event. 
 
+===============
+Enabling Plugin
+===============
+
+This plugin in not enabled by default. To enable it, first go to 
+"PluginConfig", which may be found by pressing "Operation" at the bottom left 
+and then going to "Debug" and then "PluginConfig". 
+Find "LGS" from the list of plugins, then press "Edit" and then 
+check the checkbox next to "Enabled". Press "Set", then close the window and 
+press "Save". Restart SPOT and the plugin should appear on the control panel. 

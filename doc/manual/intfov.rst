@@ -31,16 +31,6 @@ The RA and DEC will be autofilled by the :doc:`findchart` channel, but
 can also be adjusted manually by entering in the coordinates. The
 RA and DEC can be specified as decimal values or sexigesimal notation.
 
-To center the image on the current telescope pointing, check the box 
-next to "Follow telescope" in the :doc:`findchart` window.  This can allow
-you to watch a dither happening on an area of the sky if the world
-coordinate system is reasonably accurate in the finding image.
-
-.. note:: To get the "Follow telescope" feature to work, you need to
-          have written a companion plugin to get the status from your
-          telescope as described in the documentation for the
-          TelescopePosition plugin.
-
 
 .. _Wright et al (2010): https://ui.adsabs.harvard.edu/abs/2010AJ....140.1868W/abstract
 

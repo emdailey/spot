@@ -9,7 +9,7 @@ objects that could be observed.  It allows you to load one or more files
 of targets and then plot them on the :ref:`TargetsChannel`, or show their 
 visibility in the :doc:`visplot` plugin UI.
 
-.. image:: figures/targetlist2.*
+.. image:: figures/targetlist.*
 
 ===============================
 Loading targets from a CSV file
@@ -30,7 +30,10 @@ above format.  Or, type the path of the file in the box next to the "File"
 button and press "Set" (the latter method can also be used to quickly
 reload a file that you have edited).
 
-The targets should populate the table.
+The targets should populate the table and will be grouped by file. 
+To group targets into one group, select "Merge Targets" from the 
+"Settings" drop down menu and then load the files. Once loaded, a target 
+cannot be moved to another group.
 
 ================================
 Loading targets from an OPE file
@@ -45,6 +48,10 @@ choose an OPE file instead.
 .. note::  In order to load this format you need to have installed the
            optional "oscript" package:
            (pip install git+https://github.com/naojsoft/oscript).
+
+.. note::  Sometimes an OPE file will have hidden targets. To add those 
+           targets to the target list, select "List unreferenced targets"
+           from the "Settings" drop down menu.
 
 =================
 Table information
@@ -84,6 +91,3 @@ the :ref:`TargetsChannel`. Selecting "All" will show all of the targets,
 selecting "Tagged+Selected" will show all of the targets which have been 
 tagged or are selected, and selecting "Selected" will show only the 
 target which is selected.
-
-The "Settings" button has the options "Merge Targets" and 
-"List unreferenced targets". 
