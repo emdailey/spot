@@ -29,7 +29,7 @@ flipped across the vertical axis by checking the "Flip" box.
 
 The RA and DEC will be autofilled by the :doc:`findchart` channel, but 
 can also be adjusted manually by entering in the coordinates. The
-RA and DEC can be specified as decimal values or sexigesimal notation.
+RA and DEC can be specified as decimal values or sexagesimal notation.
 
 
 .. _Wright et al (2010): https://ui.adsabs.harvard.edu/abs/2010AJ....140.1868W/abstract

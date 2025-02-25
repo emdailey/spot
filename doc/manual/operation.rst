@@ -24,8 +24,8 @@ the name will default to "WS1", "WS2", etc.
 .. image:: figures/NewWorkspace.*
 
 When a workspace is opened two channels will appear,
-"wsname"_TGTS and "wsname"_FIND. You will normally want to resize
-these channel windows to be larger than the default size.
+"wsname"_TGTS and "wsname"_FIND. You may want to resize
+these channel windows.
 The TGTS channel (Targets Channel) is used to display a map of the sky. 
 Initially it will be blank, so in the CPanel window press 
 :doc:`siteselect`, :doc:`polarsky`, and :doc:`targetlist`. 

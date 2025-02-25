@@ -18,7 +18,7 @@ Targets can be loaded from a CSV file that contains a column header
 containing the column titles "Name", "RA", "DEC", and "Equinox" (they
 do not need to be in that order).  Other columns may be present but will
 be ignored.  In this format, RA and DEC can be specified as decimal values
-(in which case they are interpreted as degrees) or sexigesimal notation
+(in which case they are interpreted as degrees) or sexagesimal notation
 (HH:MM:SS.SSS for RA, DD:MM:SS.SS for DEC).  Equinox can be specified
 as e.g. J2000 or 2000.0.
 

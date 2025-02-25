@@ -25,7 +25,7 @@ DEC, Equinox and Object fields should be filled out.
 
 If you prefer to set it manually, you can type RA and DEC coordinates
 into the corresponding boxes under the "Pointing" section of the GUI
-and click "Set manually". You can use sexigesimal format, with RA in
+and click "Set manually". You can use sexagesimal format, with RA in
 H:M:S and DEC in D:M:S or decimal numbers interpreted as degrees.
 
 ==========================

@@ -14,7 +14,7 @@ target positions.
 
 The telescope and target positions are shown in both
 Right Ascension/Declination and Azimuth/Elevation.
-RA and DEC are displayed in sexigesimal notation as 
+RA and DEC are displayed in sexagesimal notation as 
 HH:MM:SS.SSS for RA, and DD:MM:SS.SS for DEC. 
 AZ and EL are both displayed in degrees as decimal 
 values. 
@@ -31,13 +31,11 @@ window so the telescope azimuth is always facing towards the
 top of the screen.
 
 The "Target follows telescope" button will select a target from 
-the target list which matches the telescope pointing. If a target 
-is manually selected from the target list while this option is selected, 
-it will be disabled to avoid conflicts. Similarly, selecting this option 
-will select the target the telescope is pointing toward or will unselect 
-all targets if the telescope is not pointing toward a target from the 
-target list. This option requires a plugin which collects the telescope 
-pointing data.
+the target list which matches the telescope pointing. Similarly, 
+selecting this option will unselect all targets if the telescope is 
+not pointing toward a target from the target list. If a target is 
+manually selected from the target list while this option is selected, 
+this option will be unselected to avoid conflicts. 
 
 ===============
 Enabling Plugin
